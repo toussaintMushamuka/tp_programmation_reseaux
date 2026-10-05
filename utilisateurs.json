@@ -1,0 +1,10 @@
+{
+  "alice": {
+    "mot_de_passe_hache": "$2b$12$ToXDZQnsCnfY4BFkro638u5BWBhrfb//MljbmTMCxwDqqxKB0riny",
+    "role": "utilisateur"
+  },
+  "admin": {
+    "mot_de_passe_hache": "$2b$12$ToXDZQnsCnfY4BFkro638u5BWBhrfb//MljbmTMCxwDqqxKB0riny",
+    "role": "admin"
+  }
+}

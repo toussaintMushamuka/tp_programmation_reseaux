@@ -1,0 +1,15 @@
+# Pratique pour tester le conteneur en local avant de déployer,
+# ou pour héberger sur votre propre VPS (docker compose up -d).
+services:
+  fileserver:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-cle_de_secours_dev_uniquement}
+      - PORT=8000
+    volumes:
+      # Monte le dossier de stockage en dehors du conteneur : les fichiers
+      # déposés survivent à un redémarrage ou une reconstruction de l'image.
+      - ./stockage:/app/stockage
+    restart: unless-stopped

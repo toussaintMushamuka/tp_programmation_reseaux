@@ -53,6 +53,7 @@ Documentation interactive : http://localhost:8000/docs
 
 ```bash
 export JWT_SECRET_KEY="une_cle_secrete_aleatoire"
+843ec2096fa15b7d
 docker compose up --build
 ```
 
